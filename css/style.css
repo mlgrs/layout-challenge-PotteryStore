@@ -42,7 +42,7 @@ ul section a {
     text-decoration: none;
     
 }
-section a::selection {
+section a::active {
     background-color:black ;
 }
 
@@ -83,8 +83,8 @@ section a::selection {
 img {
     max-inline-size: 80%;
     block-size: auto;
+    object-fit: cover;
 }
-
 figure {
     margin: auto;
     padding: 60px 0px;
@@ -109,7 +109,7 @@ figure div a {
     border-width: 1.7px;
 }
 
-figure div a::selection {
+figure div a::active {
     background-color:black ;
 }
 
