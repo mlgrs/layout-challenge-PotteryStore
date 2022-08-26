@@ -42,6 +42,64 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.shape {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	transform: scale(0.8);
+}
+.cir {
+	position: absolute;
+	border-radius: 50%;
+	z-index: 5;
+}
+
+.header__contain {
+    width: 300px;
+	position: relative;
+    left: 40%;
+}
+
+.page__name {
+	transition: 0.2s;
+	cursor: pointer;
+	color: var(--color-bg-addtocart);
+    text-align: center;
+	box-shadow: 0px 1px 5px 2px var(--color-btn-hover);
+    padding: 20px;
+    font-family: "Playfair Display", serif;
+    font-size: 1.75em;;
+}
+.page__name:active, .page__name:hover, .page__name:focus {
+	outline: none !important;
+	color: var(--color-link-hover);
+} 
+
+.particles {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	border-radius: 50%;
+	color: var(--color-addtocart);
+	font-family: monospace;
+	z-index: 5;
+}
+
+.intro__text {
+    padding: 2em;
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: center;
+}
+
+.page__info {
+    color: var(--color-info);
+    text-align: center;
+}
+
 a {
 	text-decoration: none;
 	color: var(--color-link);
@@ -54,54 +112,6 @@ a:focus {
 	outline: none;
 }
 
-button:focus {
-	outline: none;
-}
-
-/* Page Loader */
-.js .loading::before,
-.js .loading::after {
-	content: '';
-	position: fixed;
-	z-index: 100000;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: #333;
-}
-
-.js .loading::after {
-	background: url(../img/electric-guitar.svg) no-repeat 50% 50%;
-	background-size: 5em;
-	pointer-events: none;
-	opacity: 0.1;
-	animation: loaderAnim 1s linear infinite alternate forwards;
-}
-
-@keyframes loaderAnim {
-	to {
-		opacity: 1;
-	}
-}
-
-.hidden {
-	position: absolute;
-	overflow: hidden;
-	width: 0;
-	height: 0;
-	pointer-events: none;
-}
-
-/* Icons */
-.icon {
-	display: block;
-	width: 1.5em;
-	height: 1.5em;
-	margin: 0 auto;
-	fill: currentColor;
-}
-
 main {
 	position: relative;
 	width: 100%;
@@ -109,46 +119,6 @@ main {
 
 .content {
 	position: relative;
-	display: block;
-}
-
-/* Header */
-.codrops-header {
-	padding: 2em;
-	position: relative;
-	z-index: 100;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	align-items: center;
-}
-
-.codrops-header__title {
-	font-size: 2em;
-	font-weight: bold;
-	margin: 0;
-	padding: 0.75em 0;
-}
-
-.codrops-links {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	white-space: nowrap;
-}
-
-.codrops-icon {
-	display: inline-block;
-	padding: 0.25em;
-}
-
-.info {
-	color: var(--color-info);
-	text-align: center;
-}
-
-.github {
 	display: block;
 }
 
